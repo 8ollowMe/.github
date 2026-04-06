@@ -15,7 +15,7 @@
 ## 👥 팀원 및 역할 분담
 
 | 이름 | 담당 서비스 | GitHub | Blog |
-|------|------------|------|--------|------|
+|------|------------|--------|------|
 | 권진석  | `message-server` |  [@kjs0406](https://github.com/kjs0406) | [Blog](https://velog.io/@kjs0406/posts) |
 | 김준언  | `hub-server` |  [@kimjuneon](https://github.com/kimjuneon) | [Blog](https://velog.io/@juneon/posts) |
 | 서민석  | `user-server` |  [@qldo](https://github.com/qldo) | [Blog](http://zpfh.tistory.com) |
