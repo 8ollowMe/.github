@@ -16,12 +16,12 @@
 
 | 이름 | 담당 서비스 | GitHub | Blog |
 |------|------------|--------|------|
-| 권진석  | `message-server` |  [@kjs0406](https://github.com/kjs0406) | [Blog](https://velog.io/@kjs0406/posts) |
-| 김준언  | `hub-server` |  [@kimjuneon](https://github.com/kimjuneon) | [Blog](https://velog.io/@juneon/posts) |
-| 서민석  | `user-server` |  [@qldo](https://github.com/qldo) | [Blog](http://zpfh.tistory.com) |
-| 예준성  | `order-server` |  [@gnoesnooj](https://github.com/gnoesnooj) | [Blog](https://velog.io/@gnoesnooj) |
-| 정승현  | `hub-server` (재고) · `vendor-server` |  [@jsh9057](https://github.com/jsh9057) | [Blog](https://in-intuition.tistory.com/) |
-| 하지혜  | `delivery-server` |  [@AnnieHa1002](https://github.com/AnnieHa1002) | [Blog](https://dev-annieha.tistory.com/) |
+| 권진석 | `message-server` | [@kjs0406](https://github.com/kjs0406) | [Blog](https://velog.io/@kjs0406/posts) |
+| 김준언 | `hub-server` | [@kimjuneon](https://github.com/kimjuneon) | [Blog](https://velog.io/@juneon/posts) |
+| 서민석 | `user-server` | [@qldo](https://github.com/qldo) | [Blog](http://zpfh.tistory.com) |
+| 예준성 | `order-server` | [@gnoesnooj](https://github.com/gnoesnooj) | [Blog](https://velog.io/@gnoesnooj) |
+| 정승현 | `hub-server` (재고) · `vendor-server` | [@jsh9057](https://github.com/jsh9057) | [Blog](https://in-intuition.tistory.com/) |
+| 하지혜 | `delivery-server` | [@AnnieHa1002](https://github.com/AnnieHa1002) | [Blog](https://dev-annieha.tistory.com/) |
 
 ---
 
@@ -407,16 +407,16 @@ cd gateway-server
 
 ## 📁 리포지토리 구성
 
-| 리포지토리 | 설명 |
-|-----------|------|
-| [eureka-server](https://github.com/8ollowMe/eureka-server) | 서비스 디스커버리 (Netflix Eureka) |
-| [config-server](https://github.com/8ollowMe/config-server) | 중앙 설정 서버 (Spring Cloud Config) |
-| [gateway-server](https://github.com/8ollowMe/gateway-server) | API 게이트웨이 · JWT 인증 필터 |
-| [user-server](https://github.com/8ollowMe/user-server) | 회원 관리 · Keycloak 인증/인가 |
-| [hub-server](https://github.com/8ollowMe/hub-server) | 허브 · 허브 경로 · 재고 관리 |
-| [vendor-server](https://github.com/8ollowMe/vendor-server) | 업체 · 상품 관리 |
-| [order-server](https://github.com/8ollowMe/order-server) | 주문 생성 · 상태 관리 |
-| [delivery-server](https://github.com/8ollowMe/delivery-server) | 배송 · 구간 배송 · AI 경로 계획 |
-| [message-server](https://github.com/8ollowMe/message-server) | Slack 알림 발송 · 이력 관리 |
-| [common-lib](https://github.com/8ollowMe/common-lib) | 공통 라이브러리 (예외, 응답 포맷 등) |
-| [project-configs](https://github.com/8ollowMe/project-configs) | Config Server용 설정 파일 저장소 |
+| 리포지토리 | 설명                              |
+|-----------|---------------------------------|
+| [eureka-server](https://github.com/8ollowMe/eureka-server) | 서비스 디스커버리 (Netflix Eureka)      |
+| [config-server](https://github.com/8ollowMe/config-server) | 중앙 설정 서버 (Spring Cloud Config)  |
+| [gateway-server](https://github.com/8ollowMe/gateway-server) | API 게이트웨이 · JWT 인증 필터           |
+| [user-server](https://github.com/8ollowMe/user-server) | 회원 관리 · Keycloak 인증/인가          |
+| [hub-server](https://github.com/8ollowMe/hub-server) | 허브 · 허브 경로 · 재고 관리              |
+| [vendor-server](https://github.com/8ollowMe/vendor-server) | 업체 · 상품 관리                      |
+| [order-server](https://github.com/8ollowMe/order-server) | 주문 생성 · 상태 관리                   |
+| [delivery-server](https://github.com/8ollowMe/delivery-server) | 배송 · 구간 배송 · 배송자 지정 로직          |
+| [message-server](https://github.com/8ollowMe/message-server) | Slack 알림 발송 · 이력 관리 · ai 배송지 추천 |
+| [common-lib](https://github.com/8ollowMe/common-lib) | 공통 라이브러리 (예외, 응답 포맷 등)          |
+| [project-configs](https://github.com/8ollowMe/project-configs) | Config Server용 설정 파일 저장소        |
