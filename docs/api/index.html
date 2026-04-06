@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>팔로미 API Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
+    <style>
+      body { margin: 0; }
+      .topbar { background-color: #1b1b1b !important; }
+      .topbar-wrapper .link { display: none; }
+    </style>
+  </head>
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
+    <script>
+      SwaggerUIBundle({
+        urls: [
+          { url: "https://raw.githubusercontent.com/8ollowMe/user-server/main/docs/openapi.yaml", name: "User Service" },
+          { url: "https://raw.githubusercontent.com/8ollowMe/hub-server/main/docs/openapi.yaml", name: "Hub Service" },
+          { url: "https://raw.githubusercontent.com/8ollowMe/vendor-server/main/docs/openapi.yaml", name: "Vendor Service" },
+          { url: "https://raw.githubusercontent.com/8ollowMe/order-server/main/docs/openapi.yaml", name: "Order Service" },
+          { url: "https://raw.githubusercontent.com/8ollowMe/delivery-server/main/docs/openapi.yaml", name: "Delivery Service" },
+          { url: "https://raw.githubusercontent.com/8ollowMe/message-server/main/docs/openapi.yaml", name: "Message Service" },
+        ],
+        dom_id: "#swagger-ui",
+        presets: [SwaggerUIBundle.presets.apis, SwaggerUIBundle.SwaggerUIStandalonePreset],
+        layout: "BaseLayout",
+        "urls.primaryName": "User Service",
+      });
+    </script>
+  </body>
+</html>
