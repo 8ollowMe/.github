@@ -55,44 +55,7 @@
 
 ## 🏗️ 시스템 아키텍처
 
-```mermaid
-graph TB
-    Client(["클라이언트"])
-
-    subgraph Infra["인프라"]
-        GW["🔀 Gateway Server\n:8000"]
-        Eureka["📡 Eureka Server\n:8761"]
-        Config["⚙️ Config Server\n:13100"]
-        KC["🔐 Keycloak\n:9090"]
-    end
-
-    subgraph Services["마이크로서비스"]
-        US["👤 User Server"]
-        HS["🏭 Hub Server"]
-        VS["🏪 Vendor Server"]
-        OS["📦 Order Server"]
-        DS["🚚 Delivery Server"]
-        MS["💬 Message Server"]
-    end
-
-    subgraph External["외부 시스템"]
-        Slack(["Slack"])
-        Naver(["NAVER Map API"])
-        AI(["AI Server"])
-    end
-
-    Client -->|"HTTP"| GW
-    GW -->|"JWT 검증"| KC
-    GW --> US & HS & VS & OS & DS & MS
-    US & HS & VS & OS & DS & MS -->|"서비스 등록/디스커버리"| Eureka
-    US & HS & VS & OS & DS & MS -->|"설정 조회"| Config
-    MS -->|"알림 발송"| Slack
-    DS -->|"경로 계산"| Naver
-    DS -->|"AI 배송 계획"| AI
-    OS -->|"OpenFeign"| DS
-    OS -->|"OpenFeign"| VS
-    HS -->|"Kafka"| DS
-```
+![시스템 아키텍처](../docs/assets/msa아키텍쳐.png)
 
 ---
 
