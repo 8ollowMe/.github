@@ -381,7 +381,7 @@ cd gateway-server
 | 업체·상품 | `/api/v1/vendors/**`, `/api/v1/products/**` |
 | 주문 | `/api/v1/orders/**` |
 | 배송·구간 | `/api/v1/deliveries/**`, `/api/v1/shipments/**` |
-| 알림 | `/api/v1/slack-messages/**`, `/api/v1/notifications/**` |
+| 알림 | `/api/v1/messages/**`, `/api/v1/notifications/**` |
 | AI | `/api/v1/ai/**` |
 
 ### 4. 인증
